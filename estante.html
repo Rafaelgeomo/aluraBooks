@@ -11,8 +11,32 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/styleEstante.css" />
 </head>
-<header class="header">
-  <h1><img src="./img/imagensEstante/Logo-1.png" /></h1>
+
+<header class="cabeçalho">
+  <div class="container">
+    <div class="logo-img">
+      <h1><img src="./img/imagensEstante/Logo-1.png" alt="Logo da Alurabooks" class="logo-img"></h1>
+      </div>
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão">
+        <li class="opções__item"><a href="#" class="opções__link">Categorias</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="./estante.html" class="opções__link">Minha estante</a></li>
+    </ul>
+    <div class="container">
+      <a href="#"><img src="./img/Favoritos.svg" alt="Meus favoritos"
+              class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+          <img src="./img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+          <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+          <img src="./img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+          <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </div>
+   
 </header>
 
 <body>
