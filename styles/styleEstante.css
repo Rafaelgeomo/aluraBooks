@@ -22,7 +22,9 @@
 }
 
 body {
-  font-family: 'Poppins';
+  background-color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
 }
 
 .wrap {
@@ -30,20 +32,14 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  text-align: center;
-  width: 100%;
-  margin: 15px 15px;
- 
-}
 .logo-img {
-  margin: 10px;
+  padding: .6em;
 }
 
 .opções {
   display: flex;
-  margin-right: auto;
-  justify-content: center;
+  margin: auto;
+  
 }
 
 .opções__item {
@@ -56,22 +52,8 @@ body {
   color: var(--preto);
 }
 
-.opções__botão:checked~.lista-menu {
-  display: block;
-  width: auto;
-}
-
 .opções__botão {
   display: none;
-}
-
-.opções__botão:checked~.opções__rotulo>.opções__item {
-  background: var(--azul-degrade);
-  color: var(--branco);
-}
-
-.opções__item {
-  padding: 2em 1em;
 }
 
 .container {
@@ -98,11 +80,26 @@ body {
   color: var(--preto);
 }
 
+.login {
+  display: flex;
+}
+
 .banner {
-  background-image: url('/imagens/Banner-1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 278px;
+  background: var(--azul-degrade);
+  color: var(--branco);
+  text-align: center;
+  padding: 1em;
+}
+
+.banner__titulo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner__titulo {
+      font-size: 36px;
+  }
 }
 
 .nav {

@@ -5,11 +5,16 @@
   <meta metacharset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AluraBooks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/styleEstante.css" />
+  
 </head>
 
 <header class="cabeçalho">
@@ -21,9 +26,9 @@
         <input type="checkbox" id="opções-menu" class="opções__botão">
         <li class="opções__item"><a href="#" class="opções__link">Categorias</a></li>
         <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
-        <li class="opções__item"><a href="./estante.html" class="opções__link">Minha estante</a></li>
+        <li class="opções__item"><a href="./index.html" class="opções__link">Cadastro</a></li>
     </ul>
-    <div class="container">
+    <div class="login">
       <a href="#"><img src="./img/Favoritos.svg" alt="Meus favoritos"
               class="container__imagem container__imagem-transparente"></a>
       <a href="#" class="container__link">
@@ -40,7 +45,9 @@
 </header>
 
 <body>
-  <section class="banner"></section>
+  <section class="banner">
+    <h2 class="banner__titulo">Minha Estante</h2>
+</section>
   <nav class="wrap">
     <ul class="nav">
       <li><button class="btn btn-front" href="#" id="btnFiltrarLivrosFront" value="front-end">LIVROS DE
