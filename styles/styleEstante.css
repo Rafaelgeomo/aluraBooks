@@ -85,10 +85,10 @@ body {
 }
 
 .banner {
-  background: var(--azul-degrade);
-  color: var(--branco);
-  text-align: center;
-  padding: 1em;
+  background-image: url('../img/imagensEstante/Banner-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 278px;
 }
 
 .banner__titulo {
