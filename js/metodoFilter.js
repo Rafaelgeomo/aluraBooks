@@ -4,7 +4,7 @@ botoes.forEach(btn => btn.addEventListener('click', filtrarLivros)); // forEach 
 function filtrarLivros(){
     const elementoBtn = document.getElementById(this.id) //pegar o id do botao que nos estamos (o elemento inteiro)
     const categoria = elementoBtn.value //filtra somente o valor desse elemento
-    let livrosFiltrados = livros.filter(livros => livros.categoria == categoria)
+    let livrosFiltrados = categoria == 'disponivel' ? livros.filter (livro => livro.quantidade > 0) : livros.filter (livro => livro.categoria == categoria)
     exibirOsLivrosNaTela(livrosFiltrados)
 
 }
